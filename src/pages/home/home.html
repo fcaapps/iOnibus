@@ -1,19 +1,50 @@
 <ion-header>
-    <ion-navbar>
+    <ion-navbar color="cabecalho">
         <ion-title>
-            Ionic Blank
+            <custom-logged-header [title]="'iOnibus - Tela Principal'"></custom-logged-header>
         </ion-title>
     </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+    <br>
+    <button ion-button block large color="person3" round icon-left>
+        <ion-icon name="bookmarks"></ion-icon>
+        Eventos
+    </button>
+    <br>
+    <button ion-button block large color="person2" round icon-left> 
+        <ion-icon name="home"></ion-icon>
+        Congregação 
+    </button>
+    <br>
+    <button ion-button block large color="person3" round icon-left>
+        <ion-icon name="people"></ion-icon>        
+        Responsáveis
+    </button>
+    <br>
+    <button ion-button block large color="person2" round icon-left>
+        <ion-icon name="contacts"></ion-icon>        
+        Capitães
+    </button>
+    <br>
+    <button ion-button block large color="person3" round icon-left>
+        <ion-icon name="bus"></ion-icon>        
+        Passageiros
+    </button>
+    <br>
+    <button ion-button block large color="person2" round icon-left>
+        <ion-icon name="list-box"></ion-icon>        
+        Relação de Passageiros
+    </button>
 
-    <ion-list no-lines>
+
+    <!--<ion-list no-lines>
         <button ion-item *ngFor="let user of users | async" (click)="onChatCreate(user)">
             {{ user.name }}
         </button>
-    </ion-list>
+    </ion-list>-->
 
-    <button ion-button block (click)="onSignup() ">Sign Up</button>
+    <!--<button ion-button block (click)="onSignup()">Sign Up</button>-->
 
 </ion-content>

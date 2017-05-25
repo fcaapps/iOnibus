@@ -1,3 +1,7 @@
+import { Sair } from './../pages/sair/sair';
+import { Inicio } from './../pages/inicio/inicio';
+import { Tabs } from './../pages/tabs/tabs';
+import { CustomLoggedHeader } from './../components/custom-logged-header/custom-logged-header';
 import { Signin } from './../pages/signin/signin';
 import { Auth } from './../providers/auth';
 import { HttpModule } from '@angular/http';
@@ -29,10 +33,14 @@ const firebaseAuthConfig = {
 
 @NgModule({
   declarations: [
+    CustomLoggedHeader,
     MyApp,
     HomePage,
     Signup,
-    Signin
+    Signin,
+    Tabs,
+    Inicio,
+    Sair
   ],
   imports: [
     HttpModule,
@@ -45,7 +53,10 @@ const firebaseAuthConfig = {
     MyApp,
     HomePage,
     Signup,
-    Signin
+    Signin,
+    Tabs,
+    Inicio,
+    Sair    
   ],
   providers: [
     StatusBar,
